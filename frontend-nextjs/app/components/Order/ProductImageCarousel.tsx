@@ -10,32 +10,32 @@ import Image from "next/image";
 const images = [
     {
         src: "/products/box43.png",
-        alt: "Elato Device - white",
+        alt: "Wawabot Device - white",
         objectFit: "contain",
     },
     // {
     //     src: "/products/multi3.png",
-    //     alt: "Elato Device Decomposition",
+    //     alt: "Wawabot Device Decomposition",
     //     objectFit: "contain",
     // },
     {
         src: "/products/multi3.png",
-        alt: "Elato Device - gray",
+        alt: "Wawabot Device - gray",
         objectFit: "contain",
     },
     {
         src: "/products/multi2.png",
-        alt: "Elato Device - black",
+        alt: "Wawabot Device - black",
         objectFit: "contain",
     },
     // {
     //     src: "/products/orange.jpg",
-    //     alt: "Elato AI Device",
+    //     alt: "Wawabot AI Device",
     //     objectFit: "contain",
     // },
     // {
     //     src: "/products/multi_black.jpg",
-    //     alt: "Elato Device Decomposition",
+    //     alt: "Wawabot Device Decomposition",
     //     objectFit: "contain",
     // },
     // {

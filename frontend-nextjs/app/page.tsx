@@ -14,7 +14,7 @@ import { kickstarterLink } from "@/lib/data";
 
 export default async function LandingPage() {
   const supabase = createClient();
-  const { stars = 0 } = await fetchGithubStars("akdeb/ElatoAI");
+  const { stars = 0 } = await fetchGithubStars("5dbo/WawabotAI");
 
   const allPersonalities = await getAllPersonalities(supabase);
   const adultPersonalities = allPersonalities.filter((personality) => !personality.is_story && !personality.is_child_voice);
@@ -27,8 +27,8 @@ export default async function LandingPage() {
             <div className="grid gap-6 lg:grid-cols-1 lg:gap-12 items-center">
               <div className="flex flex-col items-center justify-center space-y-4">
  <h1 className="text-2xl text-center md:text-3xl font-bold font-luckiestGuy tracking-widest flex flex-row items-center justify-center gap-2">
-               <Image src="/logos/elato.png" alt="Elato Logo" width={40} height={40} />
-<span className="mt-3">Elato</span>
+               <Image src="/logos/elato.png" alt="Wawabot Logo" width={40} height={40} />
+<span className="mt-3">Wawabot</span>
                 </h1>
         <div className="flex flex-row gap-2 items-center py-4"> 
           <a href={kickstarterLink} className="inline-flex w-fit items-center space-x-2 rounded-full shadow-lg bg-white px-3 py-1 text-sm text-black">
@@ -46,7 +46,7 @@ export default async function LandingPage() {
                 </h1>
 
                 <p className="text-xl text-gray-600 text-center max-w-[600px]">
-                  Attach your <span className="font-silkscreen mx-1">Elato</span> device to any toy or plushie and watch them become AI characters you can talk
+                  Attach your <span className="font-silkscreen mx-1">Wawabot</span> device to any toy or plushie and watch them become AI characters you can talk
                   to!
                 </p>
                 <div className="flex items-center space-x-2 justify-center text-amber-500 my-2">
@@ -59,12 +59,12 @@ export default async function LandingPage() {
 
                 <div className="flex flex-col gap-4  sm:gap-8 pt-4">
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Link href={"https://elatoai.com/products"}>
+                    <Link href={"https://wawabot.ai/products"}>
                       <Button
                         size="lg"
                         className="w-full sm:w-auto flex-row items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white border-0 text-lg h-14"
                       >
-                        <span>Get Elato Now</span>
+                        <span>Get Wawabot Now</span>
                         <ChevronRight className="ml-2 h-5 w-5" />
                       </Button>
                     </Link>
@@ -83,7 +83,7 @@ export default async function LandingPage() {
                   
                   <div className="flex flex-col items-center justify-center space-y-2">
                     <p className="text-gray-700 text-sm">If you like this project, please star it on GitHub!</p>
-                    <a href="https://github.com/akdeb/ElatoAI" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://github.com/5dbo/WawabotAI" target="_blank" rel="noopener noreferrer" 
                       className="flex items-center bg-gray-900 hover:bg-gray-800 transition-colors text-white px-4 py-2 rounded-md">
                       <svg viewBox="0 0 24 24" className="h-5 w-5 mr-2 fill-white" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -124,9 +124,9 @@ export default async function LandingPage() {
             </div>
           </div>
         </section>
-        <YoutubeDemo caption="Elato AI ESP32-S3 Demo" youtubeId="o1eIAwVll5I" />
+        <YoutubeDemo caption="Wawabot AI ESP32-S3 Demo" youtubeId="o1eIAwVll5I" />
         <br/><br />
-        <YoutubeDemo caption="How to run ElatoAI on your own device" youtubeId="bXrNRpGOJWw" />
+        <YoutubeDemo caption="How to run WawabotAI on your own device" youtubeId="bXrNRpGOJWw" />
 
         {/* Products Section */}
         <ProductsSection />
@@ -147,7 +147,7 @@ export default async function LandingPage() {
                   <span className="text-xl font-bold text-purple-600">1</span>
                 </div>
                 <h3 className="text-xl font-bold text-purple-900 mb-2">Attach</h3>
-                <p className="text-gray-600">Attach the Elato device to any toy or plushie</p>
+                <p className="text-gray-600">Attach the Wawabot device to any toy or plushie</p>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-lg border border-purple-100 transform transition-transform hover:scale-105">

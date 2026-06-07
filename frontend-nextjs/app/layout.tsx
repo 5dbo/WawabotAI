@@ -310,7 +310,7 @@ export default async function RootLayout({
 }) {
     const supabase = createClient();
 
-    const { stars } = await fetchGithubStars("akdeb/WawabotAI");
+    const { stars } = await fetchGithubStars("5dbo/WawabotAI");
 
     const {
         data: { user },

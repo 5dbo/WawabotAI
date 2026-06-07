@@ -42,13 +42,13 @@ export default function LeftNavbarButtons({ user }: LeftNavbarButtonsProps) {
             aria-label="Go to Home page"
             title="Click to go to Home page"
         >
-            <a href="https://www.elatoai.com">
+            <a href="https://www.wawabot.ai">
                 <Link size={18} className="mr-1" />
                 <span className="text-md font-normal mr-1">Main Website</span>
                 <p className="flex items-center font-luckiestGuy tracking-widest text-xl mt-1">
-                    <span>Elato</span>
+                    <span>Wawabot</span>
                 </p>
-                <Image src="/logos/elato.png" alt="Elato Logo" width={24} height={24} />
+                <Image src="/logos/elato.png" alt="Wawabot Logo" width={24} height={24} />
             </a>
         </Button>
     </div>
