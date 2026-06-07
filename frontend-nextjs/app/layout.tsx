@@ -10,7 +10,7 @@ import {
     Inter_Tight,
     Borel,
     Silkscreen,
-    Luckiest_Guy,
+    Luckiest_Guy,  
 } from "next/font/google";
 import "./globals.css";
 import { createClient } from "@/utils/supabase/server";
@@ -109,13 +109,13 @@ export const metadata: Metadata = {
     metadataBase: new URL(defaultUrl),
     title: {
         default:
-            "Elato AI: The Compact Device to Bring AI Characters to Life",
+            "Wawabot AI: The Compact Device to Bring AI Characters to Life",
         template:
-            "%s | Elato AI - The Compact Device to Bring AI Characters to Life",
+            "%s | Wawabot AI - The Compact Device to Bring AI Characters to Life",
     },
-    applicationName: "Elato AI",
+    applicationName: "Wawabot AI",
     description:
-        "Elato is an AI-enabled device that brings objects to life through conversational AI. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
+        "Wawabot is an AI-enabled device that brings objects to life through conversational AI. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
     authors: [
         {
             name: "Akashdeep Deb",
@@ -130,7 +130,7 @@ export const metadata: Metadata = {
         "empathetic companion",
         "voice assistant",
         "emotional growth",
-        "Elato AI",
+        "Wawabot AI",
         "conversational AI",
         "google home",
         "amazon echo",
@@ -142,18 +142,18 @@ export const metadata: Metadata = {
         "smart AI device",
     ],
     openGraph: {
-        title: "Elato AI: The Compact Device to Bring AI Characters to Life",
+        title: "Wawabot AI: The Compact Device to Bring AI Characters to Life",
         description:
-            "Elato brings objects to life through engaging, conversational AI experiences. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
-        siteName: "Elato AI",
+            "Wawabot brings objects to life through engaging, conversational AI experiences. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
+        siteName: "Wawabot AI",
         locale: "en-US",
         type: "website",
         images: [
             {
-                url: "https://elatoai.com/images/orange.png",
+                url: "https://wawabot.ai/images/orange.png",
                 width: 1200,
                 height: 630,
-                alt: "Elato AI conversational device - Front View",
+                alt: "Wawabot AI conversational device - Front View",
             },
         ],
     },
@@ -162,33 +162,33 @@ export const metadata: Metadata = {
         follow: true,
     },
     generator: "Next.js",
-    creator: "Elato Team",
-    publisher: "Elato AI Ltd.",
+    creator: "Wawabot Team",
+    publisher: "Wawabot AI Ltd.",
     alternates: {
-        canonical: "https://elatoai.com",
+        canonical: "https://wawabot.ai",
         languages: {
-            "en-US": "https://elatoai.com",
-            "zh-CN": "https://elatoai.com",
+            "en-US": "https://wawabot.ai",
+            "zh-CN": "https://wawabot.ai",
         },
     },
     icons: {
-        icon: "https://elatoai.com/favicon.ico",
-        apple: "https://elatoai.com/favicon.ico",
+        icon: "https://wawabot.ai/favicon.ico",
+        apple: "https://wawabot.ai/favicon.ico",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Elato - An AI-powered device that brings objects to life through engaging, conversational experiences",
+        title: "Wawabot - An AI-powered device that brings objects to life through engaging, conversational experiences",
         description:
-            "More than a device, Elato is your gateway to a world where AI brings magic to the ordinary through engaging learning and interactive experiences.",
-        images: ["https://elatoai.com/images/orange.png"],
+            "More than a device, Wawabot is your gateway to a world where AI brings magic to the ordinary through engaging learning and interactive experiences.",
+        images: ["https://wawabot.ai/images/orange.png"],
     },
-    assets: "https://elatoai.com/images",
+    assets: "https://wawabot.ai/images",
     formatDetection: {
         telephone: false,
     },
     appleWebApp: {
         capable: true,
-        title: "Elato AI",
+        title: "Wawabot AI",
         statusBarStyle: "black-translucent",
     },
     category: "AI device",
@@ -204,23 +204,23 @@ export const viewport: Viewport = {
 const jsonLd: WithContext<Product> = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Elato AI",
+    name: "Wawabot AI",
     description:
-        "Elato is an AI-enabled device that brings objects to life through conversational AI. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
+        "Wawabot is an AI-enabled device that brings objects to life through conversational AI. More than a device, it's your gateway to a world where AI brings magic to the ordinary.",
     brand: {
         "@type": "Brand",
-        name: "Elato AI",
+        name: "Wawabot AI",
     },
     offers: {
         "@type": "Offer",
-        url: "https://elatoai.com",
+        url: "https://wawabot.ai",
         priceCurrency: "USD",
         price: "57.99",
         priceValidUntil: "2024-12-31", // set a realistic date in the future
         availability: "https://schema.org/InStock",
         seller: {
             "@type": "Organization",
-            name: "Elato AI Ltd.",
+            name: "Wawabot AI Ltd.",
         },
         hasMerchantReturnPolicy: {
             "@type": "MerchantReturnPolicy",
@@ -299,7 +299,7 @@ const jsonLd: WithContext<Product> = {
                 "Really cool project you've got going on, hoping one day it might use a local llm",
         },
     ],
-    image: "https://elatoai.com/images/orange.png",
+    image: "https://wawabot.ai/images/orange.png",
     category: "Interactive AI Device",
 };
 
@@ -310,7 +310,7 @@ export default async function RootLayout({
 }) {
     const supabase = createClient();
 
-    const { stars } = await fetchGithubStars("akdeb/ElatoAI");
+    const { stars } = await fetchGithubStars("akdeb/WawabotAI");
 
     const {
         data: { user },
@@ -329,7 +329,7 @@ export default async function RootLayout({
             suppressHydrationWarning
         >
             <head>
-                <link rel="canonical" href="https://www.elatoai.com" />
+                <link rel="canonical" href="https://www.wawabot.ai" />
                 <Script
                     id="product-schema"
                     type="application/ld+json"
